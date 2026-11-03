@@ -1,9 +1,9 @@
-# RequestDesk 🎫
+# RequestDesk
 
 Небольшой help-desk для приёма и обработки обращений. Идея похожа на класс систем заявок, но проект **не копирует vsDesk**: простой интерфейс и минимальный набор ролей/процессов.
 
 ## Стек
-Java 21 · Spring Boot 3.5 · Spring Security · JWT · PostgreSQL · JPA · Flyway · Swagger · JUnit/Mockito · HTML/CSS/JavaScript · Docker Compose.
+Java 21 · Spring Boot 3.5 · PostgreSQLo · HTML/CSS/JavaScript · Docker Compose.
 
 ## Роли и сценарий
 - **USER** регистрируется, создаёт обращение (тема, описание, приоритет), видит **только свои** заявки и пишет комментарии.
