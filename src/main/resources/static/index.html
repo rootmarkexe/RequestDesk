@@ -1,0 +1,12 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>RequestDesk — заявки</title><link rel="stylesheet" href="/styles.css"/></head><body>
+<header><div class="brand"><span class="brand-mark">✉</span> RequestDesk</div><div class="actions"><small id="identity"></small><span id="role" class="pill hide"></span><button class="secondary hide" id="logout">Выйти</button></div></header>
+<main><div id="feedback" role="alert"></div>
+<section id="authPanel" class="panel auth"><h1>Центр обращений</h1><p style="margin-bottom:24px">Создавайте заявки и следите за ответами операторов.</p>
+<form id="authForm"><label>Email<input id="email" type="email" autocomplete="username" required/></label><label>Пароль<input id="password" type="password" minlength="8" required/></label>
+<button id="authSubmit" type="submit">Войти</button></form><button id="authMode" class="text" style="margin-top:16px">Нет аккаунта? Регистрация</button></section>
+<section id="appPanel" class="hide"><div class="hero"><div><h1 id="pageTitle">Мои заявки</h1><p id="pageSubtitle">Отслеживайте обращения и ответы</p></div><button id="reload" class="secondary">Обновить</button></div>
+<div class="two-col"><div style="display:grid;gap:18px"><div id="newPanel" class="panel"><h2>Создать обращение</h2><form id="createForm"><label>Тема<input id="title" maxlength="120" required placeholder="Коротко опишите проблему"/></label><label>Описание<textarea id="description" maxlength="2000" required></textarea></label><label>Приоритет<select id="priority"><option value="LOW">Низкий</option><option value="NORMAL" selected>Обычный</option><option value="HIGH">Высокий</option></select></label><button type="submit">Отправить заявку</button></form></div>
+<div class="panel"><div class="row"><h2>Список заявок</h2><span id="ticketCount" class="pill"></span></div><div id="tickets"></div><div class="row"><button class="secondary" id="prev">Назад</button><small id="pageLabel"></small><button class="secondary" id="next">Далее</button></div></div></div>
+<div id="detail" class="panel"><h2>Выберите заявку</h2><p>Нажмите на обращение слева, чтобы увидеть детали, комментарии и действия.</p></div></div>
+</section></main><script src="/app.js" defer></script></body></html>
